@@ -46,6 +46,9 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="PagedList, Version=1.17.0.0, Culture=neutral, PublicKeyToken=abbb863e9397c5e1, processorArchitecture=MSIL">
+      <HintPath>packages\PagedList.1.17.0.0\lib\net40\PagedList.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Data.Linq" />
@@ -121,6 +124,9 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\DangKyHPController.cs" />
+    <Compile Include="Controllers\DangNhapController.cs" />
+    <Compile Include="Controllers\HocPhanController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\SinhVienController.cs" />
     <Compile Include="Global.asax.cs">
@@ -177,10 +183,19 @@
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\SinhVien\ListSV.cshtml" />
+    <Content Include="Views\SinhVien\Detail.cshtml" />
+    <Content Include="Views\SinhVien\Create.cshtml" />
+    <Content Include="Views\SinhVien\Edit.cshtml" />
+    <Content Include="Views\SinhVien\Delete.cshtml" />
+    <Content Include="Views\HocPhan\ListHocPhan.cshtml" />
+    <Content Include="Views\HocPhan\LayHocPhan.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Views\SinhVien\" />
+    <Folder Include="Content\images\" />
+    <Folder Include="Views\DangKyHP\" />
+    <Folder Include="Views\DangNhap\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
